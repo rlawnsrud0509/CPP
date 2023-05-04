@@ -27,3 +27,32 @@ int main() {
  
  
 }
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  
+  double sum=0, a, max=0;
+  
+  cin >> a;
+  double arr[int(a)];
+
+  for(int i=0; i<a; i++) {
+    cin >> arr[i];
+  }
+
+  for(int i=0; i<a; i++) {
+    if(arr[i] > max) {
+      max = arr[i];
+    }
+  }
+
+  for(int i=0; i<a; i++) {
+    sum+= arr[i]/max*100;
+  }
+
+  cout << sum/a;
+  
+}
