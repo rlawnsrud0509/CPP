@@ -17,7 +17,7 @@ int main() {
     cin >> rep;
     cin >> arr;
 
-    for(int j=0; j<strlen(arr); j++) {
+    for(int j=0; j < strlen(arr); j++) {
       for(int k=0; k<rep; k++) {
         cout << arr[j];
       }
